@@ -19,6 +19,7 @@ public class Calculadora {
        // System.out.println("Hola");
         System.out.print("Prueba de codigo ejemplo 1");
         System.out.println("2+2=5");
+        System.out.println("2+3=6");
     }
     
 }
