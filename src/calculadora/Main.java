@@ -5,6 +5,12 @@
  */
 package calculadora;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author est1629311
@@ -17,12 +23,36 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         int opcion = 0;
-        System.out.println("++--**// Calculadora \\**--++");
-        System.out.println("1. Suma");
-        System.out.println("2. Resta");
-        System.out.println("3. Multiplicacion");
-        System.out.println("4. Division");
-        System.out.print("Seleccione una operacion: ");
+        int operador1 = 0;
+        int operador2 = 0;
+        Operacion operacion;
+        Calculadora calculadora;
+        BufferedReader lector=new BufferedReader(new InputStreamReader(System.in));
+        try {
+            System.out.println("++--**// Calculadora \\\\**--++");
+            System.out.println("Ingrese el primer Numero: ");
+            operador1 = Integer.parseInt(lector.readLine());
+            System.out.println("Ingrese el Segundo Numero: ");
+            operador2 = Integer.parseInt(lector.readLine());;
+            System.out.println("1. Suma");
+            System.out.println("2. Resta");
+            System.out.println("3. Multiplicacion");
+            System.out.println("4. Division");
+            System.out.println("Seleccione una operacion: ");
+
+            opcion = Integer.parseInt(lector.readLine());
+            
+            switch (opcion) {
+                case 3:
+                    operacion = new Multiplicacion();
+                    calculadora= new Calculadora(operador1,operador2,operacion);
+                    System.out.println("Multiplicacion");
+
+                    break;
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }

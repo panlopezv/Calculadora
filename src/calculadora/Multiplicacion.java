@@ -11,6 +11,9 @@ package calculadora;
  */
 public class Multiplicacion implements Operacion {
 
+    public Multiplicacion() {
+    }
+
     @Override
     public int operar(int operador1, int operador2) {
         return multiplicar(operador1,operador2);
