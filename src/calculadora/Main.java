@@ -9,7 +9,7 @@ package calculadora;
  *
  * @author est1629311
  */
-public class Calculadora {
+public class Main {
 
     /**
      * @param args the command line arguments
