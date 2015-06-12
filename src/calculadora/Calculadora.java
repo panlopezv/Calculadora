@@ -51,4 +51,8 @@ public class Calculadora {
     public int getResultado() {
         return resultado;
     }   
+    
+    public void ejecutarOperacion(){
+        tipoOperacion.operar(operador1, operador2);
+    }
 }
