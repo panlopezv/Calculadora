@@ -15,8 +15,7 @@ public class Multiplicacion implements Operacion {
     public int operar(int operador1, int operador2) {
         return multiplicar(operador1,operador2);
             }
-    public int multiplicar(int operador1, int operador2){
-        
+    public int multiplicar(int operador1, int operador2){        
         return (operador1*operador2);
     }
     
