@@ -6,11 +6,10 @@
 package calculadora;
 
 /**
- * @author est1629311:Pablo Lopez
- * @author est1522712:Miguel Diaz
- * @author est1573011:Cristian Puac
- * @author est15
+ *
+ * @author Pablo López
  */
-public interface Operacion {
-    public int operar();
+public class Aritmetica {
+    int operador1;
+    int operador2;
 }

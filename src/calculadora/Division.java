@@ -9,17 +9,19 @@ package calculadora;
  *
  * @author Pablo López
  */
-public class Division implements Operacion {
+public class Division extends Aritmetica implements Operacion {
 
-    public Division() {
+    public Division(int operador1, int operador2) {
+        this.operador1=operador1;
+        this.operador2=operador2;
     }
 
-    public int dividir(int operador1, int operador2){
+    public int dividir(){
         return operador1/operador2;
     }
-    
+
     @Override
-    public int operar(int operador1, int operador2) {
-        return dividir(operador1,operador2);
+    public int operar() {
+        return dividir();
     }
 }

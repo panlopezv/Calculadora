@@ -44,10 +44,16 @@ public class Main {
             
             switch (opcion) {
                 case 3:
-                    operacion = new Multiplicacion();
-                    calculadora= new Calculadora(operador1,operador2,operacion);
-                    System.out.println("Multiplicacion");
-
+                    operacion = new Multiplicacion(operador1,operador2);
+                    calculadora= new Calculadora(operacion);
+                    calculadora.ejecutarOperacion();
+                    System.out.println("El resultado de operar "+operador1+" * "+operador2+" = "+ calculadora.getResultado());
+                    break;
+                case 4:
+                    operacion = new Division(operador1,operador2);
+                    calculadora= new Calculadora(operacion);
+                    calculadora.ejecutarOperacion();
+                    System.out.println("El resultado de operar "+operador1+" / "+operador2+" = "+ calculadora.getResultado());
                     break;
             }
         } catch (IOException ex) {

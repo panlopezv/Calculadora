@@ -9,17 +9,20 @@ package calculadora;
  *
  * @author Diaz
  */
-public class Multiplicacion implements Operacion {
+public class Multiplicacion extends Aritmetica implements Operacion {
 
-    public Multiplicacion() {
+    public Multiplicacion(int operador1, int operador2) {
+        this.operador1=operador1;
+        this.operador2=operador2;
+    }
+    
+    public int multiplicar(){        
+        return operador1*operador2;
     }
 
     @Override
-    public int operar(int operador1, int operador2) {
-        return multiplicar(operador1,operador2);
-            }
-    public int multiplicar(int operador1, int operador2){        
-        return (operador1*operador2);
+    public int operar() {
+        return multiplicar();
     }
     
 }

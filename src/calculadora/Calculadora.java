@@ -10,34 +10,14 @@ package calculadora;
  * @author Pablo López
  */
 public class Calculadora {
-    private int operador1;
-    private int operador2;
     private Operacion tipoOperacion;
     private int resultado;
     
     public Calculadora() {
     }
 
-    public Calculadora(int operador1, int operador2, Operacion tipoOperacion) {
-        this.operador1 = operador1;
-        this.operador2 = operador2;
+    public Calculadora(Operacion tipoOperacion) {
         this.tipoOperacion = tipoOperacion;
-    }
-
-    public int getOperador1() {
-        return operador1;
-    }
-
-    public void setOperador1(int operador1) {
-        this.operador1 = operador1;
-    }
-
-    public int getOperador2() {
-        return operador2;
-    }
-
-    public void setOperador2(int operador2) {
-        this.operador2 = operador2;
     }
 
     public Operacion getTipoOperacion() {
@@ -53,6 +33,6 @@ public class Calculadora {
     }   
     
     public void ejecutarOperacion(){
-        tipoOperacion.operar(operador1, operador2);
+        resultado = tipoOperacion.operar();
     }
 }
