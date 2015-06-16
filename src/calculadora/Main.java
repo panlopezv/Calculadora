@@ -43,6 +43,25 @@ public class Main {
             opcion = Integer.parseInt(lector.readLine());
             
             switch (opcion) {
+                
+                case 1:
+                    operacion = new Suma(operador1,operador2);
+                    calculadora= new Calculadora(operacion);
+                    calculadora.ejecutarOperacion();
+                    System.out.println("El resultado de operar "+operador1+" + "+operador2+" = "+ calculadora.getResultado());
+                    break;
+                
+                case 2:
+                    operacion = new Resta(operador1,operador2);
+                    calculadora= new Calculadora(operacion);
+                    calculadora.ejecutarOperacion();
+                    System.out.println("El resultado de operar "+operador1+" - "+operador2+" = "+ calculadora.getResultado());
+                    break;
+                    
+                
+                    
+                    
+                    
                 case 3:
                     operacion = new Multiplicacion(operador1,operador2);
                     calculadora= new Calculadora(operacion);
