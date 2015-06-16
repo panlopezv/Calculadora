@@ -129,10 +129,10 @@ public class Main {
                         operacion = new Tangente(operador1);
                         calculadora= new Calculadora(operacion);
                         calculadora.ejecutarOperacion();
-                        System.out.println("El resultado de operar Tan("+operador1+") = " + calculadora.getResultado());
+                        System.out.println("El resultado de operar tan("+operador1+") = " + calculadora.getResultado());
                         break;
                         
-                    case 5:
+                    case 4:
                              break; //Salir del trigonometricas
                         
                     }
