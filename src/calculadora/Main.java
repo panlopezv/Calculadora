@@ -28,12 +28,26 @@ public class Main {
         Operacion operacion;
         Calculadora calculadora;
         BufferedReader lector=new BufferedReader(new InputStreamReader(System.in));
+        try{
+            System.out.println("++--**// Calculadora \\\\**--++");
+            System.out.println("1. Aritmeticas");
+            System.out.println("2. Trigonometricas");
+            System.out.println("3. Salir");
+            System.out.println("Seleccione una operacion: ");
+            
+            opcion = Integer.parseInt(lector.readLine());
+            
+            switch (opcion) {   
+                
+                case 1:          
+       
         try {
             System.out.println("++--**// Calculadora \\\\**--++");
             System.out.println("1. Suma");
             System.out.println("2. Resta");
             System.out.println("3. Multiplicacion");
             System.out.println("4. Division");
+            System.out.println("5. Salir");
             System.out.println("Seleccione una operacion: ");
 
             opcion = Integer.parseInt(lector.readLine());
@@ -68,13 +82,57 @@ public class Main {
                     calculadora.ejecutarOperacion();
                     System.out.println("El resultado de operar "+operador1+" / "+operador2+" = "+ calculadora.getResultado());
                     break;
+                    
+                case 5:
+                    break; //Salir
+                    
+                    
+                    
                 default:
                     break;
             }
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
+                break;
+                    
+                case 2:
+                    try {
+                    
+                    System.out.println("++--**// Calculadora \\\\**--++");
+                    System.out.println("1. Coseno");
+                    System.out.println("2. Seno");
+                    System.out.println("3. Tangente");
+                    System.out.println("4. Salir");
+                    System.out.println("Seleccione una operacion: ");
+
+                    opcion = Integer.parseInt(lector.readLine());
+                        
+                    switch (opcion) {   
+                        
+                           /// aqui va codigo de clase trigonometrica
+                        case 5:
+                             break; //Salir del trigonometricas
+                        
+                    }
+                    
+                    }
+                catch (IOException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+                break;
+                    
+                case 3:
+                    break; //Salir del menu principal
+       }
+            
+        
+        }       
+        catch (IOException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
     }
+    }
+        
     
     public static void ingresarAritmetica(BufferedReader lector){
         try {
