@@ -7,7 +7,7 @@ package calculadora;
 
 /**
  *
- * @author Cristian
+ * @author Cristian Flores
  */
 public class Trigonometrica{
     

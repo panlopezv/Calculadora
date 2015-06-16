@@ -7,7 +7,7 @@ package calculadora;
 
 /**
  *
- * @author prgarzona
+ * @author Pablo Garzona
  */
 public class Resta extends Aritmetica implements Operacion{
     

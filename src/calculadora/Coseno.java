@@ -7,7 +7,7 @@ package calculadora;
 
 /**
  *
- * @author Cristian
+ * @author Cristian Flores
  */
 public class Coseno extends Trigonometrica implements Operacion{
     

@@ -7,7 +7,7 @@ package calculadora;
 
 /**
  *
- * @author Diaz
+ * @author Miguel Diaz
  */
 public class Multiplicacion extends Aritmetica implements Operacion {
 

@@ -7,7 +7,7 @@ package calculadora;
 
 /**
  *
- * @author prgarzona
+ * @author Pablo Garzona
  */
 public class Suma extends Aritmetica implements Operacion{
     
