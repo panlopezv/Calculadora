@@ -16,7 +16,7 @@ public class Tangente extends Trigonometrica implements Operacion{
     }
     
     public int operacionTangente(){        
-        return (int) Math.sin(operador1);
+        return (int) Math.tan(operador1);
     }
 
     @Override
