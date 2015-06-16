@@ -110,12 +110,26 @@ public class Main {
                         
                     switch (opcion) {   
                         
+                    case 1:
+                        ingresarTrigonometrica(lector);
+                        operacion = new Coseno(operador1);
+                        calculadora= new Calculadora(operacion);
+                        calculadora.ejecutarOperacion();
+                        System.out.println("El resultado de operar cos("+operador1+") = " + calculadora.getResultado());
+                        break;
                     case 2:
                         ingresarTrigonometrica(lector);
                         operacion = new Seno(operador1);
                         calculadora= new Calculadora(operacion);
                         calculadora.ejecutarOperacion();
-                        System.out.println("El resultado de operar seno("+operador1+")" + calculadora.getResultado());
+                        System.out.println("El resultado de operar sin("+operador1+") = " + calculadora.getResultado());
+                        break;
+                    case 3:
+                        ingresarTrigonometrica(lector);
+                        operacion = new Tangente(operador1);
+                        calculadora= new Calculadora(operacion);
+                        calculadora.ejecutarOperacion();
+                        System.out.println("El resultado de operar Tan("+operador1+") = " + calculadora.getResultado());
                         break;
                         
                     case 5:
