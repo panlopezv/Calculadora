@@ -15,12 +15,12 @@ public class Seno extends Trigonometrica implements Operacion{
         this.operador1=operador1;
     }
     
-    public int multiplicar(){        
+    public int operacionSeno(){        
         return (int) Math.sin(operador1);
     }
 
     @Override
     public int operar() {
-        return multiplicar();
+        return operacionSeno();
     }
 }
