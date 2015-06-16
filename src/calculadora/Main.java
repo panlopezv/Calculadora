@@ -111,11 +111,12 @@ public class Main {
                     switch (opcion) {   
                         
                     case 2:
-                    operacion = new Seno(operador1);
-                    calculadora= new Calculadora(operacion);
-                    calculadora.ejecutarOperacion();
-                    System.out.println("El resultado de operar seno("+operador1+")" + calculadora.getResultado());
-                    break;
+                        ingresarTrigonometrica(lector);
+                        operacion = new Seno(operador1);
+                        calculadora= new Calculadora(operacion);
+                        calculadora.ejecutarOperacion();
+                        System.out.println("El resultado de operar seno("+operador1+")" + calculadora.getResultado());
+                        break;
                         
                     case 5:
                              break; //Salir del trigonometricas
